@@ -1,0 +1,28 @@
+5.1 : concepts of Git
+    
+
+        
+Git is a version control tool . We take backups of each successful codes so that we can reuse the code when we lose ithe new version it by errors . many folders of each successful code we name it versioning . Each folder version will be given id number and a name or description . a developer use some folder structure to keep his backups. This is meant by versioning. Git makes this versioning much easier .We copy and paste files hence, it is language independent , there are  many version control tools  but most of the developers prefer git . 
+Features of git include: Commands and Keywords 
+init : it is the 1st thing to do in git. It creates a backup folder with .git extension
+Ignore : It is not a command, it is a configuration .We tell git to ignore some files which are not necessary to backup. Hence it wont back the mentioned fiel
+commit : We make a folder and copy paste in the backup folder usually but in git we need only one command commit. It automatically commits files into different  commit. I Eac folder inside a backup folder is a commit. 
+log : a commit has two part in the name 'commit id which is automatically given by git and commit message that we should describe .It shows the list of git commits with commit id and commit message 
+Snapshot : each commit is a snapshot complete project information will be there git is more efficient than usual . 
+add : Usually when we make folder each and  every file is copied it takes to long but git commits only the needful files . Selectively picking and committing the file is done using this command. 
+checkout : Even if each commit has different file or only contains 4 or 5 files each commit will contain the entire information regarding the previous commits too . if 
+HEAD : It is the recent commit or the last done commit is the head . A project usually works in the head .  If if commit new file we can only commit at the tip and cant commit in between . We can checkout to the middle but cant add new commit. We can keep checkout anywhere and the head remains in the latest this state is detached head .
+reset : we  can change the unto the previous commit but the problem when we place the head onto the middle the commits after that will be deleted . when we reset the head to middle the commits after head will be lost.It is a destructive operation
+branch : usually we can only add new commit after the head but if we need to add new feature onto any of the middle commit we can add it as new branch of commot form the middle branch also has head. Branch isn lightweight ehnacde we can make  number of brancves
+merge : to merge the changes in the sub  branch to the main branch  is merging so we can take the commits in the branch and merge it to the main branch . It goes smoothly in many cases but in some case  if we have same file in the main and sub branch we modify them both and when we place the file from the branch to the main the same file in the main will be overwritten 
+CONFLICT : git automatically tries to merge the file in the above mentioned cases but in some cases it fails to merge.when this  occurs git gives us this conflict information that giut automatically couldn't modify the file then we check and modify that file manually 
+
+cherry-pick : when we only need particular files to be added from the branch to the mian we pickit out using this command commit and id is used to cherypick the commits from the branch
+diff : to know the difference between 2 branch heads or between 2 commits etc
+clone : collaboration ( it is when we do the project alone and later we do it as a team . there should a server . if i am the head i will work as a server and give or shares the project to all other team member, fro that i will a link we share tht with all and we use clone the code i did until that will completely copied to the directories of all the team member this operation is clone
+push : all member in the team will be having different main branch and features too . if a member should send their main branch or features to me the can push the commit to server when they push the codes in the server will also be updated. 
+pull : this updated latest version will be only with the shared and the received server if all others in  the team need this they can pull the updated version. Theoretically anyone can be the server hence this git is known as the distributive version control . it has no central system or maoin server anyone who shares can be the server. But this is too complicated to manage . hence some keep central server from the pushing and pulling will be done . the server can be any linux system in the company or we can also use cloud to store al this. The popular cloud storage tool are GitHub , Bitbucket , Gerrit code Review etc…
+Pull request : In collaboration all in theme will be send or pushing their own codes to the main branch what happens is there wont be any control all type of code will be pushed that sometimes include error files too if it automatically get s updated into the main branch the whole will be filled with errors hence to prevent this the file are sent via request to the main branch the server reviews and approves the code layer only this will be added to the main branch
+
+            
+
